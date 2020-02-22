@@ -11,7 +11,8 @@
     "url": "git+https://github.com/MadButterfly/frontend-project-lvl1.git"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games",
+    "brain-even": "bin/brain-even"
   },
   "type": "module",
   "dependencies": {
