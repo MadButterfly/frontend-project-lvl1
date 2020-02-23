@@ -11,8 +11,9 @@
     "url": "git+https://github.com/MadButterfly/frontend-project-lvl1.git"
   },
   "bin": {
-    "brain-games": "bin/brain-games",
-    "brain-even": "bin/brain-even"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "type": "module",
   "dependencies": {
@@ -29,10 +30,8 @@
   },
   "homepage": "https://github.com/MadButterfly/frontend-project-lvl1#readme",
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.20.1"
   }
 }
