@@ -29,7 +29,7 @@ const gameRound = (userName, round) => {
 
 const game = (rules, round) => {
   const userName = greetings();
-  rules();
+  console.log(rules);
   let correctAnswers = 0;
   while (correctAnswers < correctAnswersInRow) {
     const roundResult = gameRound(userName, round);

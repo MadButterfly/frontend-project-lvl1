@@ -9,3 +9,6 @@ brain-even game how to:
 
 brain-calc game how to:
 [![asciicast](https://asciinema.org/a/3Py1nV1bjSa6a3d8Bphi6c36v.svg)](https://asciinema.org/a/3Py1nV1bjSa6a3d8Bphi6c36v)
+
+brain-gcd game how to:
+[![asciicast](https://asciinema.org/a/ar91xPRoFN8DIEBLcCTxBYHSL.svg)](https://asciinema.org/a/ar91xPRoFN8DIEBLcCTxBYHSL)

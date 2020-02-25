@@ -1,6 +1,6 @@
 import { game, randomNumber } from '../index.js';
 
-const rules = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (num) => num % 2 === 0;
 

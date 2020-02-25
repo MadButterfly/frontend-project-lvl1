@@ -1,6 +1,6 @@
 import { game, randomNumber } from '../index.js';
 
-const rules = () => console.log('What is the result of the expression?');
+const rules = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 const randomOperator = (opeartors) => {
