@@ -1,27 +1,33 @@
-import { game, randomNumber } from '../index.js';
+import { game, randomNumber, randomElement } from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
-const randomOperator = (opeartors) => {
-  const index = Math.floor(Math.random() * opeartors.length);
-  return operators[index];
+
+const generateQuestionData = () => {
+  const result = [];
+  result.firstOperand = randomNumber();
+  result.secondOperand = randomNumber();
+  result.operator = randomElement(operators);
+  return result;
 };
 
-const round = () => {
-  const firstOperand = randomNumber();
-  const secondOperand = randomNumber();
-  const operator = randomOperator(operators);
-  console.log(`Question: ${firstOperand} ${operator} ${secondOperand}`);
+const buildQuestion = (questionData) => {
+  const { firstOperand, secondOperand, operator } = questionData;
+  return `${firstOperand} ${operator} ${secondOperand}`;
+};
+
+const expectedAnswer = (questionData) => {
+  const { firstOperand, secondOperand, operator } = questionData;
   switch (operator) {
     case '+':
-      return String(firstOperand + secondOperand);
+      return firstOperand + secondOperand;
 
     case '-':
-      return String(firstOperand - secondOperand);
+      return firstOperand - secondOperand;
 
     case '*':
-      return String(firstOperand * secondOperand);
+      return firstOperand * secondOperand;
 
     default:
       return null;
@@ -29,5 +35,5 @@ const round = () => {
 };
 
 export default function () {
-  game(rules, round);
+  game(rules, generateQuestionData, buildQuestion, expectedAnswer);
 }

@@ -38,18 +38,23 @@ const commonElements = (arr1, arr2) => {
   return result;
 };
 
-const round = () => {
+const generateQuestionData = () => {
   const firstNumber = randomNumber();
   const secondNumber = randomNumber();
-  console.log(`Question: ${firstNumber} ${secondNumber}`);
-  const firstNumberDivisors = findDivisors(firstNumber);
-  const secondNumberDivisors = findDivisors(secondNumber);
+  return [firstNumber, secondNumber];
+};
+
+const buildQuestion = (questionData) => `${questionData[0]} ${questionData[1]}`;
+
+const expectedAnswer = (questionData) => {
+  const firstNumberDivisors = findDivisors(questionData[0]);
+  const secondNumberDivisors = findDivisors(questionData[1]);
   const commonDivisors = commonElements(firstNumberDivisors, secondNumberDivisors);
   let result = 1;
   commonDivisors.forEach((divisor) => { result *= divisor; });
-  return String(result);
+  return result;
 };
 
 export default function () {
-  game(rules, round);
+  game(rules, generateQuestionData, buildQuestion, expectedAnswer);
 }
