@@ -16,7 +16,7 @@ const getAnswer = (q) => {
 };
 
 const attemptFail = (answer, expectedAnswer, userName) => {
-  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${expectedAnswer}".'`);
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${expectedAnswer}"`);
   console.log(`Let's try again, ${userName}!`);
 };
 
