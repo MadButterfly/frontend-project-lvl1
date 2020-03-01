@@ -1,6 +1,6 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cac5c9d77329c95dd7f8/maintainability)](https://codeclimate.com/github/MadButterfly/frontend-project-lvl1/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/cac5c9d77329c95dd7f8/test_coverage)](https://codeclimate.com/github/MadButterfly/frontend-project-lvl1/test_coverage)
 
 [![Node.js CI](https://github.com/MadButterfly/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)](https://github.com/MadButterfly/frontend-project-lvl1/actions)
 
