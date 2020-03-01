@@ -5,10 +5,16 @@
 [![Node.js CI](https://github.com/MadButterfly/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)](https://github.com/MadButterfly/frontend-project-lvl1/actions)
 
 brain-even game how to:
-[![asciicast](https://asciinema.org/a/VIT2QJTJbJpm54kcgo7hrLRVk.svg)](https://asciinema.org/a/VIT2QJTJbJpm54kcgo7hrLRVk)
+[![asciicast](https://asciinema.org/a/yB3WNomAMT7qCV6bbAxx7qK6v.svg)](https://asciinema.org/a/yB3WNomAMT7qCV6bbAxx7qK6v)
 
 brain-calc game how to:
-[![asciicast](https://asciinema.org/a/3Py1nV1bjSa6a3d8Bphi6c36v.svg)](https://asciinema.org/a/3Py1nV1bjSa6a3d8Bphi6c36v)
+[![asciicast](https://asciinema.org/a/akMQjakA6ORv0uSnrQQVGThBR.svg)](https://asciinema.org/a/akMQjakA6ORv0uSnrQQVGThBR)
 
 brain-gcd game how to:
-[![asciicast](https://asciinema.org/a/ar91xPRoFN8DIEBLcCTxBYHSL.svg)](https://asciinema.org/a/ar91xPRoFN8DIEBLcCTxBYHSL)
+[![asciicast](https://asciinema.org/a/rgDwYYy9YoLNy9rWI33QcAgLn.svg)](https://asciinema.org/a/rgDwYYy9YoLNy9rWI33QcAgLn)
+
+brain-progression how to:
+[![asciicast](https://asciinema.org/a/wOHo9uMdcyWBX5ZnQSbUxFaVG.svg)](https://asciinema.org/a/wOHo9uMdcyWBX5ZnQSbUxFaVG)
+
+brain-prime how to:
+[![asciicast](https://asciinema.org/a/cvm5RdlS2q6QNxV4fFHyEmnaC.svg)](https://asciinema.org/a/cvm5RdlS2q6QNxV4fFHyEmnaC)
