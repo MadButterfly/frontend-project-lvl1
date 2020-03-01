@@ -1,9 +1,7 @@
-import { game, randomNumber } from '../index.js';
+import game from '../index.js';
+import { randomNumber, isEven } from '../lib.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-const isEven = (num) => num % 2 === 0;
-
 const generateQuestionData = () => randomNumber();
 const buildQuestion = (questionData) => questionData;
 const expectedAnswer = (questionData) => (isEven(questionData) ? 'yes' : 'no');

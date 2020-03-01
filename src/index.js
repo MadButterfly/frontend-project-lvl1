@@ -37,7 +37,7 @@ const gameRound = (userName, generateQuestionData, buildQuestion, expectedAnswer
   return true;
 };
 
-const game = (rules, generateQuestionData, buildQuestion, expectedAnswer) => {
+export default (rules, generateQuestionData, buildQuestion, expectedAnswer) => {
   const userName = greetings(rules);
   let correctAnswers = 0;
   while (correctAnswers < correctAnswersInRow) {
@@ -48,12 +48,4 @@ const game = (rules, generateQuestionData, buildQuestion, expectedAnswer) => {
     correctAnswers += 1;
   }
   gameWin(userName);
-};
-
-const randomNumber = () => Math.ceil(Math.random() * 100);
-const randomIndex = (arr) => Math.floor(Math.random() * arr.length);
-const randomElement = (arr) => arr[randomIndex(arr)];
-
-export {
-  game, randomNumber, randomIndex, randomElement,
 };

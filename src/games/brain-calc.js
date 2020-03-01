@@ -1,8 +1,9 @@
-import { game, randomNumber, randomElement } from '../index.js';
-
-const rules = 'What is the result of the expression?';
+import game from '../index.js';
+import { randomNumber, randomElement } from '../lib.js';
 
 const operators = ['+', '-', '*'];
+
+const rules = 'What is the result of the expression?';
 
 const generateQuestionData = () => {
   const result = [];
