@@ -1,16 +1,14 @@
 import game from '../index.js';
-import { randomNumber, randomIndex } from '../lib.js';
+import randomNumber from '../lib.js';
 
-const rules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
 const generateProgression = (firstNumber, difference, length) => {
-  const result = [firstNumber];
-  let currentNumber = firstNumber;
+  const result = [];
   for (let i = 0; i < length - 1; i += 1) {
-    currentNumber += difference;
-    result.push(currentNumber);
+    result.push(firstNumber + i * difference);
   }
   return result;
 };
@@ -19,14 +17,14 @@ const buildQuestion = () => {
   const firstElement = randomNumber();
   const difference = randomNumber();
   const progression = generateProgression(firstElement, difference, progressionLength);
-  const hiddenElementIndex = randomIndex(progression);
-  const answer = progression[hiddenElementIndex];
+  const hiddenElementIndex = randomNumber(0, progression.length - 1);
+  const answer = String(progression[hiddenElementIndex]);
 
   progression[hiddenElementIndex] = '..';
-  console.log(`Question: ${progression.join(' ')}`);
-  return answer;
+  const question = progression.join(' ');
+  return { question, answer };
 };
 
 export default function () {
-  game(rules, buildQuestion);
+  game(description, buildQuestion);
 }

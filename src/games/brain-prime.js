@@ -1,5 +1,5 @@
 import game from '../index.js';
-import { randomNumber } from '../lib.js';
+import randomNumber from '../lib.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -14,14 +14,14 @@ const isPrime = (num) => {
   return true;
 };
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const buildQuestion = () => {
   const question = randomNumber();
-  console.log(`Question: ${question}`);
-  return isPrime(question) ? 'yes' : 'no';
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return { question, answer };
 };
 
 export default function () {
-  game(rules, buildQuestion);
+  game(description, buildQuestion);
 }
