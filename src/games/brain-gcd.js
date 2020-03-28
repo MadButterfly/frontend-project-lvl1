@@ -1,5 +1,5 @@
-import game from '../index.js';
-import randomNumber from '../lib.js';
+import runGame from '../index.js';
+import getRandomNumber from '../lib.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -20,14 +20,14 @@ const findMaxDivisor = (firstOperand, secondOperand) => {
 };
 
 
-const buildQuestion = () => {
-  const firstNumber = randomNumber();
-  const secondNumber = randomNumber();
+const getQuestionAndAnswer = () => {
+  const firstNumber = getRandomNumber();
+  const secondNumber = getRandomNumber();
   const question = `${firstNumber} ${secondNumber}`;
   const answer = String(findMaxDivisor(firstNumber, secondNumber));
   return { question, answer };
 };
 
 export default function () {
-  game(description, buildQuestion);
+  runGame(description, getQuestionAndAnswer);
 }

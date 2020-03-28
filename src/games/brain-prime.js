@@ -1,12 +1,12 @@
-import game from '../index.js';
-import randomNumber from '../lib.js';
+import runGame from '../index.js';
+import getRandomNumber from '../lib.js';
 
 const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
 
-  for (let i = 2; i < Math.floor(num / 2); i += 1) {
+  for (let i = 2; i < num / 2; i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -16,12 +16,12 @@ const isPrime = (num) => {
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const buildQuestion = () => {
-  const question = randomNumber();
+const getQuestionAndAnswer = () => {
+  const question = getRandomNumber();
   const answer = isPrime(question) ? 'yes' : 'no';
-  return { question, answer };
+  return { question: String(question), answer };
 };
 
 export default function () {
-  game(description, buildQuestion);
+  runGame(description, getQuestionAndAnswer);
 }
